@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		5AD3157B2183AC920081DDC3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3157A2183AC920081DDC3 /* AppDelegate.swift */; };
-		5AD3157D2183AC920081DDC3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3157C2183AC920081DDC3 /* ViewController.swift */; };
+		5AD3157D2183AC920081DDC3 /* CarsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3157C2183AC920081DDC3 /* CarsViewController.swift */; };
 		5AD315802183AC920081DDC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD3157E2183AC920081DDC3 /* Main.storyboard */; };
 		5AD315822183AC920081DDC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AD315812183AC920081DDC3 /* Assets.xcassets */; };
 		5AD315852183AC920081DDC3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AD315832183AC920081DDC3 /* LaunchScreen.storyboard */; };
 		5AD315902183AC930081DDC3 /* ListWithTableViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3158F2183AC930081DDC3 /* ListWithTableViewTests.swift */; };
 		5AD3159B2183AC930081DDC3 /* ListWithTableViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD3159A2183AC930081DDC3 /* ListWithTableViewUITests.swift */; };
+		5AD315A92183AEA60081DDC3 /* CarsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD315A82183AEA60081DDC3 /* CarsTableViewCell.swift */; };
+		5AD315AD2183B1820081DDC3 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD315AC2183B1820081DDC3 /* Car.swift */; };
+		5AD315B02183B1F90081DDC3 /* CarsDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AD315AF2183B1F90081DDC3 /* CarsDatasource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,7 @@
 /* Begin PBXFileReference section */
 		5AD315772183AC920081DDC3 /* ListWithTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ListWithTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD3157A2183AC920081DDC3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5AD3157C2183AC920081DDC3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5AD3157C2183AC920081DDC3 /* CarsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsViewController.swift; sourceTree = "<group>"; };
 		5AD3157F2183AC920081DDC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AD315812183AC920081DDC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AD315842183AC920081DDC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +50,9 @@
 		5AD315962183AC930081DDC3 /* ListWithTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ListWithTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AD3159A2183AC930081DDC3 /* ListWithTableViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListWithTableViewUITests.swift; sourceTree = "<group>"; };
 		5AD3159C2183AC930081DDC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5AD315A82183AEA60081DDC3 /* CarsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsTableViewCell.swift; sourceTree = "<group>"; };
+		5AD315AC2183B1820081DDC3 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		5AD315AF2183B1F90081DDC3 /* CarsDatasource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsDatasource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,8 +103,11 @@
 		5AD315792183AC920081DDC3 /* ListWithTableView */ = {
 			isa = PBXGroup;
 			children = (
+				5AD315AE2183B1E80081DDC3 /* Datasources */,
+				5AD315AB2183B15A0081DDC3 /* Model */,
+				5AD315AA2183AEAA0081DDC3 /* Cells */,
 				5AD3157A2183AC920081DDC3 /* AppDelegate.swift */,
-				5AD3157C2183AC920081DDC3 /* ViewController.swift */,
+				5AD3157C2183AC920081DDC3 /* CarsViewController.swift */,
 				5AD3157E2183AC920081DDC3 /* Main.storyboard */,
 				5AD315812183AC920081DDC3 /* Assets.xcassets */,
 				5AD315832183AC920081DDC3 /* LaunchScreen.storyboard */,
@@ -123,6 +132,30 @@
 				5AD3159C2183AC930081DDC3 /* Info.plist */,
 			);
 			path = ListWithTableViewUITests;
+			sourceTree = "<group>";
+		};
+		5AD315AA2183AEAA0081DDC3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5AD315A82183AEA60081DDC3 /* CarsTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		5AD315AB2183B15A0081DDC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5AD315AC2183B1820081DDC3 /* Car.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5AD315AE2183B1E80081DDC3 /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				5AD315AF2183B1F90081DDC3 /* CarsDatasource.swift */,
+			);
+			path = Datasources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,7 +289,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5AD3157D2183AC920081DDC3 /* ViewController.swift in Sources */,
+				5AD315B02183B1F90081DDC3 /* CarsDatasource.swift in Sources */,
+				5AD315A92183AEA60081DDC3 /* CarsTableViewCell.swift in Sources */,
+				5AD3157D2183AC920081DDC3 /* CarsViewController.swift in Sources */,
+				5AD315AD2183B1820081DDC3 /* Car.swift in Sources */,
 				5AD3157B2183AC920081DDC3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
