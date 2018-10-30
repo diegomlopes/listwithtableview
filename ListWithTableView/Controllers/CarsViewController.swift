@@ -10,8 +10,12 @@ import UIKit
 
 class CarsViewController: UIViewController {
 
+    /// Sections to add in tableview
     var sections = ["Recommendeds", "Most Viewds", "All" ]
-    var cars = [ CarsDatasource.getCars(from: "Recommendeds"), CarsDatasource.getCars(from: "Most Viewds"), CarsDatasource.getCars(from: "All") ]
+    /// Cars for each section
+    var cars = [ CarsDatasource.getCars(from: "Recommendeds"),
+                 CarsDatasource.getCars(from: "Most Viewds"),
+                 CarsDatasource.getCars(from: "All") ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
